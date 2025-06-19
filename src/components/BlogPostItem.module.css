@@ -1,0 +1,25 @@
+.blogPostItem {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #333;
+  text-decoration: none;
+}
+
+.title:hover {
+  color: #007bff;
+}
+
+.summary {
+  color: #666;
+  font-size: 16px;
+}
+
+.date {
+  color: #999;
+  font-size: 14px;
+}
