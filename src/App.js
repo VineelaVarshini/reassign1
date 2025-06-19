@@ -1,4 +1,7 @@
+branch4
+
 branch3
+main
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BlogPostList from './components/BlogPostList';
@@ -98,6 +101,8 @@ function App() {
               />
             }
           />
+branch4
+
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -135,6 +140,7 @@ function App() {
         <Routes>
           <Route path="/" element={<BlogPostList posts={samplePosts} />} />
           {/* You can add more routes here for full post pages later */}
+ main
  main
         </Routes>
       </div>
