@@ -1,4 +1,7 @@
+ branch-5
+
 branch4
+ main
 import React, { useState } from 'react';
 import styles from './BlogPostItem.module.css';
 import DeleteButton from './DeleteButton';
@@ -32,6 +35,8 @@ function BlogPostItem({ post, onEdit, onDelete }) {
           setShowConfirm(false);
         }}
       />
+ branch-5
+
 
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -49,6 +54,7 @@ function BlogPostItem({ id, title, summary, date, url }) {
       </Link>
       <p className={styles.summary}>{summary}</p>
       <p className={styles.date}>Published on {formattedDate}</p>
+ main
  main
     </div>
   );
