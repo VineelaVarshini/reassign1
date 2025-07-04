@@ -1,3 +1,7 @@
+ branch-5
+
+branch4
+ main
 import React, { useState } from 'react';
 import styles from './BlogPostItem.module.css';
 import DeleteButton from './DeleteButton';
@@ -31,6 +35,27 @@ function BlogPostItem({ post, onEdit, onDelete }) {
           setShowConfirm(false);
         }}
       />
+ branch-5
+
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styles from './BlogPostItem.module.css'; // We'll create this later
+
+function BlogPostItem({ id, title, summary, date, url }) {
+  const formattedDate = new Date(date).toLocaleDateString('en-US', {
+    year: 'numeric', month: 'long', day: 'numeric',
+  });
+
+  return (
+    <div className={styles.blogPostItem}>
+      <Link to={url} className={styles.title}>
+        <h2>{title}</h2>
+      </Link>
+      <p className={styles.summary}>{summary}</p>
+      <p className={styles.date}>Published on {formattedDate}</p>
+ main
+ main
     </div>
   );
 }
